@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/api': 'http://localhost:3000', // 👈 backend running on 3000
+      '/api': 'https://event-scraping-service.onrender.com', // 👈 backend running on 3000
     },
   },
 })
