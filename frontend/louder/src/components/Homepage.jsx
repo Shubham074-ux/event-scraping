@@ -4,7 +4,7 @@ function Homepage() {
   const [events, setEvents] = useState([]);
 
   useEffect(() => {
-    fetch('/api/events')
+    fetch('https://event-scraping-service.onrender.com/api/events')
       .then(res => res.json())
       .then(data => setEvents(data))
       .catch(err => console.error(err));
